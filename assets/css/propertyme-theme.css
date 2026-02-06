@@ -1,0 +1,59 @@
+/* PropertyMe-inspired theme for i-Ruma content conversion */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;900&display=swap');
+
+:root{
+  --light-blue: #14cdeb;
+  --dark-blue: #4C6993;
+  --purple: #666AD3;
+  --accent1: #FF9966;
+  --accent2: #E04C5D;
+}
+
+html,body{
+  font-family: 'Nunito Sans', 'Helvetica Neue', sans-serif;
+  color: #6a707a;
+  margin:0; padding:0; background:#fff;
+}
+
+h1,h2,h3,h4,h5,h6{ color: var(--dark-blue); margin:0 0 1rem 0; }
+
+.navbar-area{ background: linear-gradient(215.51deg, var(--light-blue) 21.33%, #9194da 93.23%); box-shadow:0 1px 3px rgba(0,0,0,.12); }
+.pm-nav{ display:flex; gap:1rem; align-items:center; }
+.pm-nav a{ color:#fff; text-decoration:none; font-weight:600; }
+.pm-logo{ height:42px; }
+
+.gradient-text-blue-orange{
+  background: linear-gradient(90deg, #5282DD 0%, #666AD3 33%, #E04C5D 66%, #FF9966 100%);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; color:transparent;
+}
+
+.btn--orange{ background-color: var(--accent1); border-color: var(--accent1); color:#fff; padding:10px 24px; border-radius:30px; font-weight:700; text-decoration:none; display:inline-block; }
+.btn--orange:hover{ opacity:.95; transform:translateY(-2px); }
+
+.btn--light-blue{ background:transparent; border:2px solid #fff; color:#fff; padding:8px 20px; border-radius:30px; text-decoration:none; }
+
+.container{ max-width:1100px; margin:0 auto; padding:0 20px; }
+.header-hero{ padding:140px 0 60px; text-align:center; color:#fff; }
+.header-hero h1{ font-size:3rem; color:#fff; }
+
+/* content conversions */
+.section-title .title{ color: #5D3FD3; }
+
+.managementWorkflow{ background:#f4f8fc; padding:40px 0; }
+.secheduleDemoTbl input, .secheduleDemoTbl textarea{ width:100%; padding:8px; border:1px solid #d7d7d7; border-radius:6px; }
+.secheduleDemoTbl button{ background:var(--accent1); color:#fff; border:none; padding:10px 18px; border-radius:8px; }
+
+/* Footer adjustments */
+.footer-area{ background:#f7f8fb; padding:40px 0 20px; color:#4c6993; }
+.footer-area .widget-title{ font-weight:700; margin-bottom:12px; }
+
+@media (max-width:768px){ .pm-nav{ flex-wrap:wrap; justify-content:center; } .header-hero h1{ font-size:2rem; } }
+
+/* Override original theme icon filters so SVG icons remain visible on light backgrounds */
+.icon img.iconField,
+.icon img.iconField2,
+.feature-card img {
+  filter: none !important;
+  opacity: 1 !important;
+}
+

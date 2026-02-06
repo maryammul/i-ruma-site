@@ -1,0 +1,295 @@
+/* PropertyMe-inspired Modern Styles for i-Ruma */
+
+/* Smooth Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Scroll Reveal Animation */
+.scroll-reveal {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.scroll-reveal-delay {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out 0.2s forwards;
+}
+
+/* Feature Cards with Hover Effects */
+.single-connect-you-item {
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    background: #fff;
+    opacity: 0;
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.single-connect-you-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.15);
+}
+
+.single-connect-you-item .icon im- PropertyMe Style */
+.downloadBtn {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.downloadBtn:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+/* Link Hover Effects - PropertyMe Style */
+a {
+    transition: all 0.24s ease-in-out;
+}
+
+.navbar-nav li a:hover {
+    opacity: 0.85;
+}
+
+/* Floating Animation for Icons */
+@keyframes floating {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.floating-icon {
+    animation: floating 3s ease-in-out infinite
+    font-weight: 700;
+    margin-top: 15px;
+    font-size: 1.25rem;
+}
+
+.single-connect-you-item .content p {
+    color: #6a707a;
+    line-height: 1.6;
+}
+
+/* Section backgrounds */
+.background--grey {
+    background-color: #F9FAFB;
+}
+
+.background--lightest-blue {
+    background-color: #f4f8fc;
+}
+
+.background--white {
+    background-color: #fff;
+}
+
+/* Modern section headings */
+.section-title h2,
+.title-section h2 {
+    color: #4C6993;
+    font-weight: 900;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+/* Rounded images and videos */
+img,
+video {
+    border-radius: 12px;
+}
+
+/* Download buttons hover effect */
+.downloadBtn {
+    transition: transform 0.3s ease;
+}
+
+.downloadBtn:hover {
+    transform: scale(1.05);
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Feature sections */
+.feature-section {
+    padding: 80px 0;
+}
+
+.feature-section h3 {
+    color: #4C6993;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.feature-section p {
+    color: #6a707a;
+    line-height: 1.8;
+}
+
+/* Call to action gradients */
+.cta-gradient {
+    background: linear-gradient(69deg, #5282DD -20.87%, #666AD3 9.3%, #E04C5D 60.59%, #FF9966 99.81%);
+    color: #fff;
+}
+
+/* Card shadow effects */
+.card-shadow {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: box-shadow 0.3s ease;
+}
+
+.card-shadow:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+
+/* Modern container padding */
+.section {
+    padding: 60px 0;
+}
+
+/* Gradient overlay for header */
+.header-overlay {
+    background: linear-gradient(rgba(20, 205, 235, 0.85), rgba(145, 148, 218, 0.85));
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .section-title h2 {
+        font-size: 2rem;
+    }
+    
+    .single-connect-you-item {
+        margin-bottom: 20p- PropertyMe Exact Match */
+.btn, 
+button[type="submit"],
+input[type="submit"] {
+    font-family: "Nunito Sans", "Helvetica Neue", sans-serif !important;
+    font-weight: 700 !important;
+    border-radius: 30px !important;
+    padding: 12px 32px !important;
+    transition: all 0.24s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    text-decoration: none !important;
+    display: inline-block !important;
+    cursor: pointer !important;
+    font-size: 16px !important;
+    line-height: 22px !important;
+    border: 2px solid transparent !important;
+}
+
+/* PropertyMe Gradient Background Styles */
+.background--gradient-blue-purple {
+    background: linear-gradient(215.51deg, #14cdeb 21.33%, #9194da 93.23%);
+}
+
+.background--gradient-multi {
+    background: linear-gradient(69deg, #5282DD -20.87%, #666AD3 9.3%, #E04C5D 60.59%, #FF9966 99.81%)
+
+/* Animation for feature cards */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* Enhanced button styles */
+.btn {
+    font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+    font-weight: 700;
+    border-radius: 30px;
+    padding: 12px 32px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Stats section styling */
+.stats-section {
+    background: #f4f8fc;
+    padding: 60px 0;
+}
+
+.stat-item {
+    text-align: center;
+    padding: 30px;
+}
+
+.stat-number {
+    font-size: 3rem;
+    font-weight: 900;
+    color: #9194DA;
+    margin-bottom: 10px;
+}
+
+.stat-label {
+    color: #4C6993;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+/* Footer link hover effects */
+footer a:hover {
+    opacity: 0.7 !important;
+    transition: opacity 0.3s ease;
+}
+
+/* Social icons styling */
+.social-icon li a img {
+    transition: transform 0.3s ease;
+}
+
+.social-icon li a img:hover {
+    transform: scale(1.1);
+}
+
+/* Ensure SVG icons show correctly on white cards (undo site-wide inversion) */
+.single-connect-you-item .icon img,
+.icon img.iconField,
+.icon img.iconField2,
+.feature-card img,
+.single-amazing-feature-01 .icon img {
+    filter: none !important;
+    opacity: 1 !important;
+}
