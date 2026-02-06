@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noarchive">
+    <title> i-Ruma • Home</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- icofont -->
+    <link rel="stylesheet" href="assets/css/fontawesome.5.7.2.css">
+    <!-- flaticon -->
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+    <!-- animate.css -->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <!-- magnific popup -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- propertyme modern style -->
+    <link rel="stylesheet" href="assets/css/propertyme-style.css">
+    <!-- responsive -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <style>
+        body {
+            font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+            color: #6a707a;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+            color: #4C6993;
+        }
+        
+        /* Gradient text effects */
+        .gradient-text-blue-orange {
+            background: linear-gradient(90deg, #5282DD 0%, #666AD3 33%, #E04C5D 66%, #FF9966 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .red-gradient-text {
+            background: linear-gradient(90deg, #E04C5D 0%, #FF9966 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        /* Modern button styles */
+        .btn--orange {
+            background-color: #FF9966 !important;
+            border-color: #FF9966 !important;
+            color: #fff !important;
+            border-radius: 30px;
+            font-weight: 700;
+            padding: 10px 30px;
+            transition: all 0.3s ease;
+        }
+        
+        .btn--orange:hover {
+            background-color: #f29161 !important;
+            border-color: #ffa375 !important;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(255, 153, 102, 0.3);
+        }
+        
+        .btn--light-blue {
+            background-color: transparent !important;
+            border: 2px solid #fff !important;
+            color: #fff !important;
+            border-radius: 30px;
+            font-weight: 700;
+            padding: 8px 28px;
+            transition: all 0.3s ease;
+        }
+        
+        .btn--light-blue:hover {
+            background-color: #fff !important;
+            color: #14cdeb !important;
+            border-color: #14cdeb !important;
+        }
+        
+        /* Updated navbar styles */
+        .navbar-area {
+            background: linear-gradient(215.51deg, #14cdeb 21.33%, #9194da 93.23%);
+            box-shadow: 0 1px 3px rgba(0,0,0,.12), 0 1px 2px rgba(0,0,0,.24);
+        }
+        
+        .navbar-nav li a {
+            color: #fff !important;
+            font-weight: 400;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+        
+        .navbar-nav li a:hover {
+            opacity: 0.8;
+        }
+        
+        header video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: 100%;
+            height: auto;
+            opacity: 0.6;
+            z-index: 0;
+            -ms-transform: translateX(-50%) translateY(-50%);
+            -moz-transform: translateX(-50%) translateY(-50%);
+            -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+        }
+		
+		 .background {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: 100%;
+            height: auto;
+            opacity: 0.6;
+            z-index: 0;
+            -ms-transform: translateX(-50%) translateY(-50%);
+            -moz-transform: translateX(-50%) translateY(-50%);
+            -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+        }
+
+        @media only screen and (max-width: 768px) {
+            header video {
+                width: 200%;                
+            }
+        }
+		
+		@media only screen and (max-width: 768px) {
+            .background {
+                width: 200%;                
+            }
+        }
+		
+		
+		/* Extra small devices (phones, 600px and down) */
+		@media only screen and (max-width: 600px) {
+
+			.contenttitle {
+				font-size: 13px !important;            
+			}
+		}
+
+		/* Small devices (portrait tablets and large phones, 600px and up) */
+		@media only screen and (min-width: 600px) {
+
+			.contenttitle {
+				font-size: 13px !important;            
+			 }
+
+		}
+
+		/* Medium devices (landscape tablets, 768px and up) */
+		@media only screen and (min-width: 768px) {
+
+			.contenttitle {
+				font-size: 22px !important;            
+			}
+
+		}
+
+		/* Large devices (laptops/desktops, 992px and up) */
+		@media only screen and (min-width: 992px) {
+			.contenttitle {
+				font-size: 22px !important;            
+			 }
+		}
+
+		/* Extra large devices (large laptops and desktops, 1200px and up) */
+		@media only screen and (min-width: 1200px) {
+
+			.contenttitle {
+				 font-size: 22px !important;            
+			 }
+
+
+		}
+
+
+
+
+    </style>
+</head>
+
+<body>
+
+    <!-- navbar area start -->
+    <nav class="navbar navbar-area navbar-expand-lg nav-absolute white nav-style-01 header-style-09">
+        <div class="container nav-container">
+            <div class="responsive-mobile-menu">
+                <div class="logo-wrapper">
+                    <a href="index.html" class="logo">
+                        <img src="assets/img/ir.png" alt="logo" style="width: 235px;height:50px;" height="60">
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#appside_main_menu"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="appside_main_menu">
+                <ul class="navbar-nav">
+                    <li class="current-menu-item navSelectedLink"><a href="index.html">Home</a></li>
+                    <li><a href="automation.html">Why Automation?</a></li>
+                    <li><a href="oursolution.html">Our Solutions</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+        </div>
+        </div>
+    </nav>
+
+    <!-- navbar area end -->
+
+    <!-- header area start  -->
+    <header class="header-area header-bg-11 style-11" id="home">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="overlay"></div>
+                <!--<video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+                    <source src="assets/productionID_4424416.mp4" type="video/mp4">
+                </video>-->
+				
+				<img class="background" src="assets/img/background.jpg" alt="logo">
+				
+                <div class="col-lg-12">
+                    <div class="header-inner text-center header-video-text">
+						<p class="contenttitle" style="color: #fff; font-size: 1.2rem; margin-bottom: 15px;">The definite smarter and futuristic solution</p>
+                        <h1 class="title wow fadeInDown" style="color: #fff; font-size: 3rem; font-weight: 900; margin-bottom: 20px;"><span class="gradient-text-blue-orange" style="background: linear-gradient(90deg, #ffffff 0%, #ffffff 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">i-RUMALISE YOUR PROPERTY</span></h1>
+                        <p class="contenttitle" style="color: #fff; font-size: 1.1rem; margin-bottom: 30px;">Automation is in our core, focusing on giving all residents 24/7 service </p>
+                        <div class="btn-wrapper wow fadeInUp" style="display: flex; gap: 15px; justify-content: center;">
+                            <a href="contact.html" class="btn btn--orange">Contact Us</a>
+                            <a href="#about" class="btn btn--light-blue">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- connect area start  -->
+    <section class="connect-area" id="about" style="padding: 0px 0px 85px 0px; margin-top: -100px;">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="single-connect-you-item margin-bottom-30 theme-01">
+                                <div class="icon">
+                                    <img class="iconField" src="assets/img/icon/full-management.svg">
+                                </div>
+                                <div class="content">
+                                    <h4 class="title">Full Management</h4>
+                                    <p>Keep proper records of tasks and projects systematically</p>
+                                </div>
+                            </div>
+                            <div class="single-connect-you-item margin-bottom-30 theme-02">
+                                <div class="icon">
+                                    <img class="iconField" src="assets/img/icon/security-management.svg">
+                                </div>
+                                <div class="content">
+                                    <h4 class="title">Security Management</h4>
+                                    <p>A guard tracking and patrolling platform to extract and optimize security team’s efficiency</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="right-connect-you-wrap">
+                                <div class="single-connect-you-item theme-03">
+                                    <div class="icon">
+                                        <img class="iconField" src="assets/img/icon/workflow-management.svg">
+                                    </div>
+                                    <div class="content">
+                                        <h4 class="title">Workflow Management</h4>
+                                        <p>Smarter task and workflow management software integrated</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="right-content-area">
+                        <h2 class="title" style="color: #5D3FD3;">Simple and Effective Solutions</h2>
+                        <p>From enhanced security control, to security patrolling, feedback management, and even your accounting or day-to-day tasks.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="amazing-feature-area padding-bottom-80">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="section-title">
+                        <!-- <span class="subtitle">More Features</span>-->
+                        <h3 class="title extra" style="color: #5D3FD3;">A Complete Management System</h3>
+                        <p>Covers every aspect of management and focuses on supporting the performance management to achieve the objectives.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="single-amazing-feature-01 theme-01 margin-bottom-30">
+                        <div class="icon">
+                            <img class="iconField2 fieldIcon01" src="assets/img/icon/cloud-based-management.svg">
+                        </div>
+                        <div class="content">
+                            <h4 class="title">Cloud-based Management</h4>
+                            <p>Boost efficiency and take access control to the next level</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="single-amazing-feature-01 theme-02 margin-bottom-30">
+                        <div class="icon">
+                            <img class="iconField2 fieldIcon02" src="assets/img/icon/security-management1.svg">
+                        </div>
+                        <div class="content">
+                            <h4 class="title">Security Management</h4>
+                            <p>Enhance Security, convenience and communication between the security guards, residents and management office</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="single-amazing-feature-01 theme-03 margin-bottom-30">
+                        <div class="icon">
+                            <img class="iconField2 fieldIcon03" src="assets/img/icon/system.svg">
+                        </div>
+                        <div class="content">
+                            <h4 class="title">Easy Dashboard</h4>
+                            <p>Enhanced visibility, Real-time customer analytics and Better forecasting</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="single-amazing-feature-01 theme-04 margin-bottom-30">
+                        <div class="icon">
+                            <img class="iconField2 fieldIcon04" src="assets/img/icon/service-wifi.svg">
+                        </div>
+                        <div class="content">
+                            <h4 class="title">Services</h4>
+                            <p>Hire a wide range of reliable vendor services easily</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- </section> -->
+
+    <div class="managementWorkflow">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <h4 class="title" style="font-size:42px;color: #5D3FD3;margin-top: 72px;">Ready to digitalize your <br>property management workflow?</h4>
+                </div>
+                <div class="col-md-5">
+                    <form>
+                        <table class="secheduleDemoTbl">
+                            <thead>
+                                <tr>
+                                    <th colspan="2">Schedule a Demo</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style="padding-top: 32px;">Name</td>
+                                    <td style="padding-top: 32px;"><input type="text" name=""></td>
+                                </tr>
+                                <tr>
+                                    <td>Mobile No</td>
+                                    <td><input type="text" name=""></td>
+                                </tr>
+                                <tr>
+                                    <td>Email</td>
+                                    <td><input type="email" name=""></td>
+                                </tr>
+                                <tr>
+                                    <td>Description</td>
+                                    <td><textarea></textarea></td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-bottom: 32px;">&nbsp;</td>
+                                    <td style="padding-bottom: 32px;"><button>Book your demo now</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="call-to-action-area" style="background: linear-gradient(69deg, #5282DD -20.87%, #666AD3 9.3%, #E04C5D 60.59%, #FF9966 99.81%); padding: 80px 0;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="call-to-action-inner-style-02">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-11">
+                                <h3 class="title text-center" style="font-size: 36px; color: #fff; font-weight: 900; margin-bottom: 30px;">App is available on<br>Google Play & App Store</h3>
+                                <div class="mt-5" style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
+                                    <a href="https://play.google.com/store/apps/details?id=com.iruma_app_resident" style="transition: transform 0.3s ease;"><img class="downloadBtn" src="assets/img/icon/play-button.png" style="height: 60px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);"></a>
+                                    <a href="https://apps.apple.com/app/id1625059081" style="transition: transform 0.3s ease;"><img class="downloadBtn" src="assets/img/icon/apple-button.png" style="height: 60px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);"></a>
+									<a href="apk/IRuma_Resident_V2.40.apk" style="transition: transform 0.3s ease;"><img class="downloadBtn" src="assets/img/icon/apk-button.png" style="height: 60px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer area start -->
+    <footer class="footer-area style-02" style="background: linear-gradient(215.51deg, #14cdeb 21.33%, #9194da 93.23%); color: #fff;">
+        <div class="footer-top" style="padding: 60px 0 30px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget about_widget">
+                            <a href="index.html" class="footer-logo"><img src="assets/img/i-ruma2.png" alt="" style="width: 150px; height: 102px; filter: brightness(0) invert(1);"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget nav_menus_widget">
+                            <h4 class="widget-title" style="color: #fff; font-weight: 700;">Product</h4>
+                            <ul>
+                                <li><a href="index.html" style="color: #fff; opacity: 0.9;">Home</a></li>
+                                <li><a href="oursolution.html" style="color: #fff; opacity: 0.9;">Our Solutions</a></li>
+                                <li><a href="automation.html" style="color: #fff; opacity: 0.9;">Why Automation</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget nav_menus_widget">
+                            <h4 class="widget-title" style="color: #fff; font-weight: 700;">Company</h4>
+                            <ul>
+                                <li><a href="aboutus.html" style="color: #fff; opacity: 0.9;">About Us</a></li>
+                                <li><a href="contact.html" style="color: #fff; opacity: 0.9;">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget nav_menus_widget">
+                            <h4 class="widget-title" style="color: #fff; font-weight: 700;">Support</h4>
+                            <ul>
+                                <li><a href="Refund.html" style="color: #fff; opacity: 0.9;">Refund Policy</a></li>
+                                <li><a href="privacy.html" style="color: #fff; opacity: 0.9;">Privacy Policy</a></li>
+                                <li><a href="policy.html" style="color: #fff; opacity: 0.9;">i-Ruma Policy</a></li>
+                                <li><a href="Terms.html" style="color: #fff; opacity: 0.9;">Terms of Service</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 30px;">
+                    <div class="col-lg-12">
+                        <div class="footer-widget about_widget text-center">
+                            <ul class="social-icon" style="display: flex; justify-content: center; gap: 15px; list-style: none; padding: 0;">
+                                <li><a href="https://www.facebook.com/irumapms" target="_blank"><img src="assets/img/icon/icon-facebook.png" style="filter: brightness(0) invert(1); width: 30px;"></a></li>
+                                <li><a href="https://www.instagram.com/irumapms/" target="_blank"><img src="assets/img/icon/icon-instagram.png" style="filter: brightness(0) invert(1); width: 30px;"></a></li>
+                                <li><a href="https://www.linkedin.com/company/i-ruma" target="_blank"><img src="assets/img/icon/icon-linkedin.png" style="filter: brightness(0) invert(1); width: 30px;"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-area" style="background-color: rgba(0,0,0,0.1); padding: 20px 0;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="copyright-inner text-center">
+                            <div class="left-content-area" style="color: #fff;"> &copy; Copyrights 2022 i-Ruma All rights reserved. </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer area end -->
+
+    <!-- preloader area start -->
+    <!--<div class="preloader-wrapper" id="preloader">
+        <div class="preloader">
+            <div class="sk-circle">
+                <div class="sk-circle1 sk-child"></div>
+                <div class="sk-circle2 sk-child"></div>
+                <div class="sk-circle3 sk-child"></div>
+                <div class="sk-circle4 sk-child"></div>
+                <div class="sk-circle5 sk-child"></div>
+                <div class="sk-circle6 sk-child"></div>
+                <div class="sk-circle7 sk-child"></div>
+                <div class="sk-circle8 sk-child"></div>
+                <div class="sk-circle9 sk-child"></div>
+                <div class="sk-circle10 sk-child"></div>
+                <div class="sk-circle11 sk-child"></div>
+                <div class="sk-circle12 sk-child"></div>
+            </div>
+        </div>
+    </div>-->
+
+    <!-- preloader area end -->
+
+    <!-- back to top area start -->
+    <div class="back-to-top">
+        <i class="fas fa-angle-up"></i>
+    </div>
+    <!-- back to top area end -->
+
+    <!-- jquery -->
+    <script src="assets/js/jquery.js"></script>
+    <!-- popper -->
+    <script src="assets/js/popper.min.js"></script>
+    <!-- bootstrap -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- owl carousel -->
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <!-- magnific popup -->
+    <script src="assets/js/jquery.magnific-popup.js"></script>
+    <!-- contact js-->
+    <script src="assets/js/contact.js"></script>
+    <!-- wow js-->
+    <script src="assets/js/wow.min.js"></script>
+    <!-- way points js-->
+    <script src="assets/js/waypoints.min.js"></script>
+    <!-- counterup js-->
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <!-- main -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
